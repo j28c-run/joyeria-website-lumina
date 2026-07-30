@@ -27,14 +27,3 @@ Una elegante plataforma web para una joyería fina, diseñada para destacar cole
 
 ---
 
-## 🛠️ Instalación y Uso Local
-
-1. Clona este repositorio:
-   ```bash
-   git clone git@github.com:j28c-run/joyeria-website-lumina.git
-   ```
-2. Abre el archivo `index.html` en tu navegador preferido.
-
----
-
-Desarrollado con ❤️ para **Lumina Joyería**.
