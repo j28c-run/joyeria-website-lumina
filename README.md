@@ -13,9 +13,8 @@ Una elegante plataforma web para una joyería fina, diseñada para destacar cole
 
 ---
 
-## 📸 Capturas de Pantalla
+## Vista Principal
 
-| Vista Principal
 img/hero-image.jpg
 
 ---
