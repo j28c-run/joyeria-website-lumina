@@ -15,13 +15,8 @@ Una elegante plataforma web para una joyería fina, diseñada para destacar cole
 
 ## 📸 Capturas de Pantalla
 
-| Vista Principal / Banner | Productos Finos |
-| :---: | :---: |
-| ![Hero Banner](img/hero-image.jpg) | ![Producto Destacado](img/product1.jpg) |
-
-| Colección | Catálogo |
-| :---: | :---: |
-| ![Producto 2](img/product2.jpg) | ![Detalle](img/WhatsApp%20Image%202024-09-08%20at%206.48.02%20PM%20(2).jpeg) |
+| Vista Principal
+img/hero-image.jpg
 
 ---
 
