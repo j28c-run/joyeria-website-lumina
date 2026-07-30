@@ -1,0 +1,394 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+/* body {
+    font-family: Helvetica, Arial, sans-serif;
+} */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.user-actions a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 85vh;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.brands {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.brands img {
+    width: 150px;
+    /* Ajusta el tamaño según tu necesidad */
+    transition: transform 1s ease-in-out;
+}
+
+.brands img:hover {
+    animation: soft-bounce 1s ease;
+}
+
+/* Animación de rebote suave */
+@keyframes soft-bounce {
+    0% {
+        transform: translateX(20px);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+
+}
+
+
+
+.products {
+    flex-wrap: wrap;
+}
+
+.product {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.product div {
+    width: 50%;
+    padding: 0px 60px;
+}
+
+.product img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.product h2 {
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+.shop-now {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 40px;
+    background-color: transparent;
+    border: 2px solid #333;
+    color: #333;
+    text-decoration: none;
+    margin-top: 50px;
+
+}
+.shop-now:hover {
+    background-color: #333;
+    color: white;
+    transition: .5s all;
+}
+
+.testimonials {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    height: 60vh;
+}
+
+.testimonials h2 {
+    margin: 50px;
+    font-size: 40px;
+}
+
+.carousel-container {
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    width: 300%;
+    animation: slide 15s infinite;
+}
+
+.testimonial {
+    width: 33.3333%;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.testimonial-content {
+    flex: 1;
+}
+
+.testimonial p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.testimonial .rating {
+    margin-bottom: 5px;
+    color: gold;
+}
+
+.testimonial .name {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-33.3333%);
+    }
+
+    66% {
+        transform: translateX(-66.6666%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* ------------------- */
+.instagram {
+    padding: 40px;
+    height: 85vh;
+}
+
+.instagram h2 {
+    text-align: center;
+    padding: 50px;
+    font-size: 40px;
+
+}
+
+.instagram-gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.instagram-item {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+    /* Oculta el overlay cuando está fuera del contenedor */
+}
+
+.instagram-gallery img {
+    width: 100%;
+    height: 400px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+.instagram-item:hover img {
+    transform: scale(1.1);
+    /* Aplica zoom a la imagen */
+    transition: 1s;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* Inicialmente fuera de vista a la izquierda */
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo oscuro semi-transparente */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease;
+}
+
+.instagram-item:hover .overlay {
+    left: 0;
+    /* Mueve el overlay al área visible */
+}
+
+
+/* ----- */
+/* footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: black;
+    color: #6a6969;
+    line-height: 30px;
+    
+}
+
+footer a {
+    color: #717070;
+    text-decoration: none;
+    
+}
+
+
+.newsletter input {
+    padding: 10px;
+    margin-right: 10px;
+}
+ */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000;
+    height: 50vh;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column a {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #b5b2b2;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.newsletter input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+}
+
+.newsletter button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #ccc;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: rgb(126, 123, 123);
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.payment-icons img {
+    width: 40px;
+    margin-left: 10px;
+    margin: 10px;
+}
